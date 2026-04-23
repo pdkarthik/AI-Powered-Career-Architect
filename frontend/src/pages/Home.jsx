@@ -43,7 +43,7 @@ export default function HomePage() {
       setAiData(data);
     } catch (err) {
       console.error(err);
-      setError("Error generating resume. Please ensure the Express backend is running (npm run server).");
+      setError("AI rate limit reached. Please try again later.");
     } finally {
       setIsLoading(false);
     }
